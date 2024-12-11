@@ -1,0 +1,20 @@
+The Foreign Function & Memory API has been evolving since Java 16 to provide better interaction between Java and native code (such as C/C++ libraries) without the need for JNI (Java Native Interface).
+
+What it does:
+
+The fourth incubator phase of this API in Java 20 provides further enhancements and stability for accessing native code and memory in a safe and efficient manner.
+This API enables direct access to native memory (outside of the Java heap), allowing Java applications to interact with native libraries (e.g., C/C++ code) without the performance overhead of JNI.
+It provides facilities for interacting with native code, such as allocating and deallocating memory, reading and writing to that memory, and calling native functions, all while avoiding the safety pitfalls and complexity of JNI.
+Example:
+
+// Allocate native memory
+try (var segment = MemorySegment.allocateNative(100)) {
+    // Interact with native memory here
+}
+
+
+Benefits:
+
+Improves performance by reducing the overhead of JNI.
+Enables Java developers to write high-performance applications that need to access native libraries or manipulate large amounts of data in memory.
+Makes Java more suitable for workloads that involve interfacing with native code (e.g., game engines, scientific computations).

@@ -1,0 +1,23 @@
+Pattern Matching for switch enhances the switch statement to allow patterns as case labels, making it more expressive and easier to write.
+
+What it does:
+
+Java 20 introduces the second preview of pattern matching for switch, which allows developers to use patterns to match on complex data types, such as classes and records.
+Instead of using traditional switch statements with case labels for specific values, you can use pattern matching to match the structure of objects, making the code more concise and easier to maintain.
+Example:
+
+static String testSwitch(Object obj) {
+    return switch (obj) {
+        case Integer i -> "Integer: " + i;
+        case String s -> "String: " + s;
+        case Person(String name, int age) -> "Person: " + name + ", " + age;
+        default -> "Unknown";
+    };
+}
+
+
+Benefits:
+
+Improves readability by allowing complex types and their properties to be matched directly in the switch statement.
+Reduces boilerplate code when working with complex data structures, especially when handling different object types.
+Increases safety by ensuring that the types you expect to match are properly handled in a single place.

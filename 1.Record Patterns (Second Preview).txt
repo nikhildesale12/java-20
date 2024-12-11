@@ -1,0 +1,22 @@
+Record Patterns extend the existing pattern matching feature introduced in earlier versions of Java, and Java 20 introduces the second preview of this feature.
+
+What it does:
+
+Record Patterns simplify the deconstruction of records by providing a way to use pattern matching when working with records. Previously, you had to manually extract fields from a record, but with Record Patterns, you can do it more concisely and in a readable way.
+This feature builds on Java 16's introduction of records (a special class in Java for immutable data carriers) by allowing you to match and deconstruct record values in patterns.
+Example:
+
+record Person(String name, int age) {}
+
+Object obj = new Person("Alice", 30);
+
+// Using record pattern to deconstruct a record object
+if (obj instanceof Person(String name, int age)) {
+    System.out.println(name + " is " + age + " years old");
+}
+
+
+Benefits:
+
+Reduces boilerplate code for extracting and using data from records.
+Makes the code more readable and less error-prone by enabling direct deconstruction and variable binding.

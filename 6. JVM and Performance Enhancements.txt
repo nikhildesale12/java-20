@@ -1,0 +1,13 @@
+As with every new Java release, Java 20 includes numerous JVM improvements designed to optimize the performance and efficiency of applications:
+
+What it does:
+
+JVM optimizations typically focus on improving garbage collection (e.g., better management of memory and more efficient use of CPU resources).
+Native memory tracking (NMT) improvements and JVM overhead optimizations help applications run more efficiently.
+Performance improvements related to ZGC (Z Garbage Collector) and Shenandoah GC.
+
+
+Benefits:
+
+Improved throughput and lower latency for applications, especially those with high concurrency or large data sets.
+Faster application startup times and better memory management.

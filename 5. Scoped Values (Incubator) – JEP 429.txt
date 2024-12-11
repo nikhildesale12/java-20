@@ -1,0 +1,12 @@
+Scoped Values is an incubator feature that allows better management of data that is scoped to specific contexts, particularly across multiple threads.
+
+What it does:
+
+Scoped Values simplify managing global or shared data in concurrent environments by limiting the scope of a variable to a specific context (e.g., a particular thread or a set of operations).
+It provides a safer, more structured way to handle values that need to be passed across threads or tasks without using ThreadLocal variables.
+
+
+Benefits:
+
+Simplifies the use of thread-local data, which can be error-prone and hard to manage.
+Improves thread safety and reduces bugs related to shared state in multi-threaded applications.

@@ -1,0 +1,9 @@
+JEP 431 continues the trend of making Java frameworks like Spring Boot easier to work with by reducing the number of required dependencies for certain tasks.
+
+What it does:
+
+Java 20 makes it easier to use libraries like Spring Boot by reducing the number of dependencies needed for basic functionality, 
+making it easier for developers to get started and maintain their applications.
+Benefits:
+
+Developers can focus more on writing business logic and less on managing dependencies.

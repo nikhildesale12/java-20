@@ -1,0 +1,22 @@
+Virtual Threads are a significant new feature designed to improve the scalability of Java applications, especially those that need to handle a large number of concurrent tasks.
+
+What it does:
+
+Virtual Threads are lightweight threads that are managed by the JVM rather than by the operating system. Traditional Java threads are OS-managed, which means they have a relatively high overhead when creating and managing many concurrent threads. Virtual threads eliminate much of this overhead.
+Java 20 introduces the second preview of Virtual Threads, building on the work started in Java 19.
+With Virtual Threads, developers can now create and manage millions of concurrent tasks efficiently, which was previously challenging due to resource constraints.
+This feature is part of the Project Loom initiative, which aims to simplify concurrency in Java by introducing lightweight, user-mode threads.
+
+Example:
+
+var executor = Executors.newVirtualThreadPerTaskExecutor();
+executor.submit(() -> {
+    System.out.println("Hello from virtual thread!");
+});
+
+
+Benefits:
+
+Virtual Threads allow for better scalability, especially for I/O-bound applications (such as web servers or microservices).
+Developers can write applications that handle massive concurrency with far fewer resources compared to traditional threads.
+Simplifies asynchronous programming as Virtual Threads allow tasks to be written in a sequential manner without callback hell.

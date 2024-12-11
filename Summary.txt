@@ -1,0 +1,17 @@
+1. Record Patterns (Second Preview): Enhanced pattern matching for records.
+
+2. Virtual Threads (Second Preview): Further improvements to the lightweight thread model.
+
+3. Foreign Function & Memory API (Fourth Incubator): Continued evolution of native memory access.
+
+4. Pattern Matching for switch (Second Preview): Refined pattern matching for switch statements.
+
+5. Structured Concurrency (Incubator): Easier management of multiple threads.
+
+6. JVM Performance Enhancements: Ongoing improvements in JVM performance, garbage collection, and overall efficiency.
+
+7. Scoped Values (Incubator): Better data management across threads.
+
+8. Unnamed Patterns and Variables (Second Preview): Reducing unnecessary bindings in pattern matching.
+
+9. JEP 429: Fewer Dependencies for Frameworks: Improving the ease of use for popular Java frameworks like Spring Boot.
